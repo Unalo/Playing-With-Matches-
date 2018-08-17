@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Matching stics</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Matching stics</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 </head>
+
 <body>
     <div class="match-one">
         12
+        <textarea name="name" class="match-one" onfocus="this.value=''"></textarea>
+        <button class="button-primary calculateBtn" on type="button" name="button">Add number</button>
     </div>
+    <script type="text/javascript x-template" class='match-one'>
+        function getRandomInt() {
+            var max = 12;
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+        console.log(getRandomInt(3));
+        // expected output: 0, 1 or 2
+
+        console.log(getRandomInt(1));
+        // expected output: 0
+
+        console.log(Math.random());
+        // expected output: a number between 0 and 1
+    </script>
 </body>
+
 </html>
