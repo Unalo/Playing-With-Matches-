@@ -12,24 +12,27 @@
         12
     </div>
 
+    <div class="box1">
+            
+        </div>
+
     <script type="text/javascript x-template" class='match-one'>
         document.addEventListener('DOMContentLoaded', function () {
 
-            var num = document.querySelector(".match-number");
-            
+            var num = document.querySelector(".match-one");
+            console.log(num);
 
             function getRandomInt(num = 1) {
                 return Math.floor(Math.random() * Math.floor(num));
             }
-          
-
+        
             function update(){
                 getRandomInt();
             }
 
             getRandomInt();
             update();
-            console.log(getRandomInt());
+            console.log(getRandomInt(2));
             // expected output: a number between 0 and 1
         });
     </script>
