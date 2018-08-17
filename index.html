@@ -4,37 +4,35 @@
 <head>
     <title>Matching stics</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    
 </head>
 
 <body>
-    <div class="match-one">
-        12
+
+    <div class="randomNum">
+        <div class="match-one">
+            12
+        </div>
     </div>
 
-    <div class="box1">
+    <script>
+    
+           
+            function getRandomInt(num) {
+                return Math.ceil(Math.random() * num);
+            }
             
-        </div>
-
-    <script type="text/javascript x-template" class='match-one'>
-        document.addEventListener('DOMContentLoaded', function () {
-
-            var num = document.querySelector(".match-one");
-            console.log(num);
-
-            function getRandomInt(num = 1) {
-                return Math.floor(Math.random() * Math.floor(num));
+            function update(numberRange){
+                let num = document.querySelector(".match-one");
+                let numberUpdate = getRandomInt(numberRange);    
+                // console.log("Number",num);
+                num.innerHTML = numberUpdate;
             }
-        
-            function update(){
-                getRandomInt();
-            }
-
-            getRandomInt();
-            update();
-            console.log(getRandomInt(2));
+            
+            //console.log(getRandomInt())
+            update(9);
             // expected output: a number between 0 and 1
-        });
+     
     </script>
 </body>
 
