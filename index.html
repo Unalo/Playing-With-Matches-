@@ -4,7 +4,7 @@
 <head>
     <title>Matching stics</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+
 </head>
 
 <body>
@@ -13,27 +13,16 @@
         <div class="match-one">
             12
         </div>
+
+        <div class="match-one">
+            2
+        </div>
+        <div class="match-one">
+            3
+        </div>
     </div>
 
-    <script>
-    
-           
-            function getRandomInt(num) {
-                return Math.ceil(Math.random() * num);
-            }
-            
-            function update(numberRange){
-                let num = document.querySelector(".match-one");
-                let numberUpdate = getRandomInt(numberRange);    
-                // console.log("Number",num);
-                num.innerHTML = numberUpdate;
-            }
-            
-            //console.log(getRandomInt())
-            update(9);
-            // expected output: a number between 0 and 1
-     
-    </script>
 </body>
+<script type="text/javascript" src="number.js"></script>
 
 </html>

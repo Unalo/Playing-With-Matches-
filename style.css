@@ -3,6 +3,25 @@
     background-color: chartreuse;
     color: bold black; 
     text-align: center;
+    width: 20%;
+    float: left;
+}
+.match-two {
+    font-size: 300%;
+    background-color: chartreuse;
+    color: bold black; 
+    text-align: center;
+    float: left;
+    width: 20%;
+}
+
+.match-three {
+    font-size: 300%;
+    background-color: chartreuse;
+    color: bold black; 
+    text-align: center;
+   
+
 }
 
 .box1{
